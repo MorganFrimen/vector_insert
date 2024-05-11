@@ -9,9 +9,6 @@ int main()
 
 	std::string name;
 	int number;
-	/*int add = 1;
-	int del = 2;
-	int stop = 3;*/
 
 	std::vector<std::string> string_arr = { "hello", "world","vector" };
 
