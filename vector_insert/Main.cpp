@@ -9,8 +9,6 @@ int main()
 	int number;
 
 	std::vector<std::string> string_arr = { "hello", "world","vector" };
-
-	std::cout << std::endl;
 	for (std::string arr_s : string_arr)
 		std::cout << arr_s << std::endl;
 
