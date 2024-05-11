@@ -1,8 +1,6 @@
 #include <iostream>
 #include <vector>
 
-
-
 int main()
 {
 	setlocale(LC_ALL, "ru");
