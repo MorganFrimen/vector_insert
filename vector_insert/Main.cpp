@@ -1,6 +1,10 @@
 #include <iostream>
 #include <vector>
 
+void Print_Arr( std::string value ) {
+	std::cout << value << std::endl;
+}
+
 int main()
 {
 	setlocale(LC_ALL, "ru");
@@ -10,7 +14,7 @@ int main()
 
 	std::vector<std::string> string_arr = { "hello", "world","vector" };
 	for (std::string arr_s : string_arr)
-		std::cout << arr_s << std::endl;
+		Print_Arr(arr_s);
 
 	std::cout << " \n";
 	std::cout << "1 - Добавить значение : 2 - Удалить значение : 3 - Завершить программу \n";
@@ -25,7 +29,7 @@ int main()
 		string_arr.insert(string_arr.begin() + number, name);
 
 		for (std::string arr_s : string_arr)
-			std::cout << arr_s << std::endl;
+			Print_Arr(arr_s);
 		break;
 	case 2:
 		std::cout << "Какую позицию удалить введите номер : \n";
@@ -33,7 +37,7 @@ int main()
 		string_arr.erase(string_arr.begin() + number);
 
 		for (std::string arr_s : string_arr)
-			std::cout << arr_s << std::endl;
+			Print_Arr(arr_s);
 		break;
 	default:
 		std::cout << "Завершение программы : " << "\n";
